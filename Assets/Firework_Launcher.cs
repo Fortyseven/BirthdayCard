@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class Firework_Launcher : MonoBehaviour
 {
@@ -11,14 +10,13 @@ public class Firework_Launcher : MonoBehaviour
 
     private float _last_launch_timeout;
 
-    private void Start()
-    {       
+    public void Start()
+    {
         Reset();
         _last_launch_timeout = TIMER_MIN;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Update()
     {
         _last_launch_timeout -= Time.deltaTime;
         if ( _last_launch_timeout <= 0 ) {

@@ -1,9 +1,8 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class Main : MonoBehaviour
 {
-    void Update()
+    public void Update()
     {
         if ( Input.GetKeyDown( KeyCode.Escape ) ) {
             Application.Quit();
@@ -12,6 +11,5 @@ public class Main : MonoBehaviour
         if ( Input.GetKeyDown( KeyCode.M ) ) {
             GetComponent<AudioSource>().mute = !GetComponent<AudioSource>().mute;
         }
-
     }
 }
